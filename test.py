@@ -49,7 +49,7 @@ print(result)
  """
 
 
-def sequence(n):
+""" def sequence(n):
     result = []
     result.append(n)
     if n <= 0:
@@ -59,12 +59,36 @@ def sequence(n):
 
 print(sequence(16))
 print(sequence(40))
+ """
 
 
 
+""" x = list(filter(lambda x: print(x), list(range(0,11,2))) """
+""" def f(l):
+    l2 =[]
+    for i in l:
+        if i%3 == 0:
+            l2.append(i)
+    return l2
+l = list(range(0,50,3))
+print(l) """
+
+def polynomial(n, coef):
+    # Начало вашего кода    
+    for i in range(n+1):
+        s = 0
+        for j in coef:
+            print('s={}'.format(s))
+            print('i={}'.format(i))
+            print('j={}'.format(j))
+            s += j**i
+    print(s)
 
 
-
+polynomial(2, [1,2,3])
+""" x = 2
+y = [1, 2, 3]
+print(polynomial(x, y)) """
 
 
 
