@@ -73,7 +73,7 @@ print(sequence(40))
 l = list(range(0,50,3))
 print(l) """
 
-def polynomial(n, coef):
+""" def polynomial(n, coef):
     # Начало вашего кода    
     for i in range(n+1):
         s = 0
@@ -85,10 +85,47 @@ def polynomial(n, coef):
     print(s)
 
 
-polynomial(2, [1,2,3])
+polynomial(2, [1,2,3]) """
 """ x = 2
 y = [1, 2, 3]
 print(polynomial(x, y)) """
+
+test_dict = {'a': 10, 'p': 100, 'c': 0, 'b': 30}
+
+def sort_dict(d):
+    list_of_keys = []
+    sorted_dict = {}
+    for item in d.items():
+        list_of_keys.append(item)
+    list_of_keys.sort()
+    for i in list_of_keys:
+        sorted_dict[i] = d[i]
+    return sorted_dict
+
+result = sort_dict(test_dict)
+print(result)
+
+
+dt = {}
+for i in range(10):
+    for j in range(10):
+        dt[j] = i
+print(dt)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
