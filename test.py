@@ -121,15 +121,18 @@ print(dt) """
     return int(human_age)
 test = dog_ages_converter(12)
 print(test) """
-def how_many_days_in_months(month):
+""" def how_many_days_in_months(month):
     if month.title() in ['January', 'March', 'May', 'July', 'August', 'October', 'December', 'Январь', 'Март', 'Май', 'Июль', 'Август', 'Октябрь', 'Декабрь']:
         return 'There are 31 days in {}'.format(month.title())
     elif month.title() in ['April', 'June', 'September', 'November', 'Апрель', 'Июнь', 'Сентябрь', 'Ноябрь']:
         return 'There are 30 days in {}'.format(month.title())
     elif month.title() in ['February', 'Февраль']:
         return 'There are 28/29 days in {}'.format(month.title())
-print(how_many_days_in_months('sePTEmber'))
+print(how_many_days_in_months('sePTEmber')) """
+for a,b,c in [1,2,3],[30,20,10],[400,500,600]:
+    print('a:{}\nb:{}\nc:{}'.format(a,b,c))
 
+for a in [1,2,3] 
 
 
 
