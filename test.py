@@ -90,7 +90,7 @@ polynomial(2, [1,2,3]) """
 y = [1, 2, 3]
 print(polynomial(x, y)) """
 
-test_dict = {'a': 10, 'p': 100, 'c': 0, 'b': 30}
+""" test_dict = {'a': 10, 'p': 100, 'c': 0, 'b': 30}
 
 def sort_dict(d):
     list_of_keys = []
@@ -110,8 +110,17 @@ dt = {}
 for i in range(10):
     for j in range(10):
         dt[j] = i
-print(dt)
-
+print(dt) """
+def dog_ages_converter(dog_age):
+    human_age = 0
+    for age in range(dog_age):
+        if age < 2:
+            human_age += 10.5
+        elif age >= 2:
+            human_age += 4
+    return int(human_age)
+test = dog_ages_converter(12)
+print(test)
 
 
 
