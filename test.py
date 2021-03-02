@@ -129,12 +129,17 @@ print(test) """
     elif month.title() in ['February', 'Февраль']:
         return 'There are 28/29 days in {}'.format(month.title())
 print(how_many_days_in_months('sePTEmber')) """
-for a,b,c in [1,2,3],[30,20,10],[400,500,600]:
+""" for a,b,c in [1,2,3],[30,20,10],[400,500,600]:
     print('a:{}\nb:{}\nc:{}'.format(a,b,c))
 
-for a in [1,2,3] 
+for a in [1,2,3]  """
 
+list = [ ]
 
+for i in range(100):
+    list.append(lambda x: x+i)
+
+list[42](3)
 
 
 
