@@ -133,19 +133,52 @@ print(how_many_days_in_months('sePTEmber')) """
     print('a:{}\nb:{}\nc:{}'.format(a,b,c))
 
 for a in [1,2,3]  """
+""" 
+import csv
 
-list = [ ]
+def read_file(filename=None):
+  list_of_figures = []
+  with open(filename) as file:
+    # Начало вашего кода
+    content = list(csv.reader(file, delimiter = ","))
+    for row in content:
+        if row[0].title() == 'Rectangle':
+            if row[1] == row[2]:
+                list_of_figures.append(Square(side=int(row[1])))
+            else:
+                list_of_figures.append(Rectangle(width=int(row[1]), height=int(row[2])))
+        elif row[0].title() == 'Square':
+            list_of_figures.append(Square(side=int(row[1])))
+        elif row[0].title() == 'Circle':
+            list_of_figures.append(Circle(radius=int(row[1])))
+    # Конец вашего кода list_of_figures[0] Rectangle, Square и Circle
+  return list_of_figures
 
-for i in range(100):
-    list.append(lambda x: x+i)
+list_of_figures = read_file(filename="./figures.csv")
+print(list_of_figures)
+print(len(list_of_figures))
+ """
 
-list[42](3)
+"""     for arg in kwargs.values():
+        if 
+    name = kwargs["name"]
+    familyName = kwargs["family"]
+    country = kwargs["country"] """
+    
+    
+    
+
+arr3 = list(range(20))
+
+#def sliceList(arr, *args):
+#    str_elem, end_elem, step_elem = args
+ #   l = list(args)
+#    return arr(l[0], l[1], l[2])
+
+#print(sliceList(arr3,2,4,1))
 
 
-
-
-
-
+print(arr3[2:4:1])
 
 
 
