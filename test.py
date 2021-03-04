@@ -167,7 +167,7 @@ print(len(list_of_figures))
     
     
     
-
+""" 
 arr3 = list(range(20))
 
 #def sliceList(arr, *args):
@@ -178,8 +178,45 @@ arr3 = list(range(20))
 #print(sliceList(arr3,2,4,1))
 
 
-print(arr3[2:4:1])
+print(arr3[2:4:1]) """
+arr1 = [1,23,3,40,5]
+arr2 = [10,11,12,5,18]
 
+def add(a, b):
+    return a + b 
+def test(pred, ref):
+    if pred == ref:
+        return True
+    else:
+        return False
+
+def multiply(a, b):
+    return a * b
+
+def sumList(arr):
+    # Начало вашего кода
+    while len(arr) >= 2:
+        a = arr.pop()
+        b = arr.pop()
+        arr.append(add(a, b))
+    return arr[0]
+
+def mulList(arr):
+    # Начало вашего кода
+    arrt = arr
+    while len(arrt) >= 2:
+        a = arrt.pop()
+        print(f'a:{a} \t len(arrt):{len(arrt)}')
+        b = arrt.pop()
+        print(f'b:{b} \t len(arrt):{len(arrt)}')
+        arrt.append(multiply(a, b))
+        print(f'\t len(arrt):{len(arrt)}')
+    print(f'arrt[0]:{arrt[0]}')
+    return arrt[0]
+    # Конец вашего кода
+print(mulList(arr1),13800)
+print(test(mulList(arr1),13800))
+print(test(mulList(arr2),118800))
 
 
 
