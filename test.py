@@ -182,16 +182,52 @@ print(arr3[2:4:1]) """
 arr1 = [1,23,3,40,5]
 arr2 = [10,11,12,5,18]
 
+
 def add(a, b):
-    return a + b 
+    return a + b
+
+def subtract(a, b):
+    c = 0
+    if a > b :
+        c = a - b
+        if c < 0:
+            return c * (-1)
+        else:
+            return c
+    else:
+        c = b - a
+        if c < 0:
+            return c * (-1)
+        else:
+            return c
+
+def divide(a, b):
+    if a > b:
+        if b == 0:
+            return 'Zero division error! Not Zorro! But Zero, sorry. Keep calm and try again.'
+        else:
+            return a // b
+    else:
+        if a == 0:
+            return 'Zero division error! Not Zorro! But Zero, sorry. Keep calm and try again.'
+        else:
+            return b // a
+    
+
+def multiply(a, b):
+    return a * b
+
+def rem(a, b):
+    if a > b:
+        return a % b
+    else:
+        return b % a
+        
 def test(pred, ref):
     if pred == ref:
         return True
     else:
         return False
-
-def multiply(a, b):
-    return a * b
 
 def sumList(arr):
     # Начало вашего кода
@@ -219,6 +255,22 @@ print(test(mulList(arr1),13800))
 print(test(mulList(arr2),118800))
 
 
+
+arr1 = [1,23,3,40,5]
+arr2 = [10,11,12,5,18] 
+
+def remList(arr1,arr2):
+    # Начало вашего кода
+    arrt = []
+    for i in range(len(arr1)):
+        a = arr1[i]
+        b = arr2[i]
+        c = subtract(max(a,b), multiply(divide(max(a, b), min(a, b)), min(a, b)))
+        arrt.append(c)
+    return arrt
+    # Конец вашего кода
+
+print(test(remList(arr1,arr2),[0, 1, 0, 0, 3]))
 
 
 
