@@ -179,8 +179,8 @@ arr3 = list(range(20))
 
 
 print(arr3[2:4:1]) """
-arr1 = [1,23,3,40,5]
-arr2 = [10,11,12,5,18]
+""" arr1 = [1,23,3,40,5]
+arr2 = [10,11,12,5,18] """
 
 
 def add(a, b):
@@ -236,7 +236,7 @@ def sumList(arr):
         b = arr.pop()
         arr.append(add(a, b))
     return arr[0]
-
+""" 
 def mulList(arr):
     # Начало вашего кода
     arrt = arr
@@ -252,9 +252,9 @@ def mulList(arr):
     # Конец вашего кода
 print(mulList(arr1),13800)
 print(test(mulList(arr1),13800))
-print(test(mulList(arr2),118800))
+print(test(mulList(arr2),118800)) """
 
-
+""" 
 
 arr1 = [1,23,3,40,5]
 arr2 = [10,11,12,5,18] 
@@ -272,9 +272,26 @@ def remList(arr1,arr2):
 
 print(test(remList(arr1,arr2),[0, 1, 0, 0, 3]))
 
+ """
+
+def sc(floor):
+  cry = ''
+  for i in range(floor):
+    while i < floor - 2:
+      cry += 'Aa~ '
+    if i == floor - 1 and floor < 7:
+      cry += 'Pa! Aa!'
+    elif i == floor - 1 and floor >= 7:
+      cry += 'Pa!'
+  return cry
 
 
-
+test(sc(2), "Aa~ Pa! Aa!")
+test(sc(6), "Aa~ Aa~ Aa~ Aa~ Aa~ Pa! Aa!")
+test(sc(7), "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!")
+test(sc(10), "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!")
+test(sc(1), "")
+test(sc(-1), "")
 
 
 
