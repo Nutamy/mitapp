@@ -74,7 +74,7 @@ class Student(Teacher):
             writer = csv.writer(f)
             info = Student.list_of_students
             for v in info:
-                writer.writerow([v.get_info()["Name"], v.get_info()["Surname"], v.get_info()["Age"], v.get_info()["Gender"], v.get_info()["Nationality"], v.get_info()["School"], v.get_info()["Subjects"]])
+                writer.writerow([v.get_info()["Name"], v.get_info()["Surname"], v.get_info()["Age"], v.get_info()["Gender"], v.get_info()["Nationality"], v.get_info()["School"],  ''.join(v.get_info()["Subjects"])])
     
     
 
