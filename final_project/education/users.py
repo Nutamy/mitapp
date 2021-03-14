@@ -1,3 +1,5 @@
+import csv
+
 class Human:
 
     def __init__(self, name = None, surname = None, age = None, gender = None, nationality = None):
@@ -28,10 +30,13 @@ class Human:
 
 class Teacher(Human):
 
+    list_of_teachers = []
+
     def __init__(self, name, surname, age, gender, nationality, school = None, subject = None):
         self.school = school
         self.subject = list(subject)
         super().__init__(name, surname, age, gender, nationality)
+        Teacher.list_of_teachers.append(self)
 
     def set_school(self, school):
         self.school = school
@@ -41,17 +46,35 @@ class Teacher(Human):
             self.subject.append(subject[i])
     
     def get_info(self):
-        student_info = super().get_info()
-        student_info['School'] = self.school
-        student_info['Subjects'] = self.subject
-        return student_info
+        teacher_info = super().get_info()
+        teacher_info['School'] = self.school
+        teacher_info['Subjects'] = self.subject
+        return teacher_info
+
+    @staticmethod
+    def get_info_teachers():
+        with open('reports/Teachers.csv', 'w') as f:
+            writer = csv.writer(f)
+            info = Teacher.list_of_teachers
+            for v in info:
+                writer.writerow([v.get_info()["Name"], v.get_info()["Surname"], v.get_info()["Age"], v.get_info()["Gender"], v.get_info()["Nationality"], v.get_info()["School"], ''.join(v.get_info()["Subjects"])])
 
 class Student(Teacher):
 
+    list_of_students = []
+
     def __init__(self, name, surname, age, gender, nationality, school, subject):
         super().__init__(name, surname, age, gender, nationality, school, subject)
+        Student.list_of_students.append(self)
+        super().list_of_teachers.pop()
 
-
+    @staticmethod
+    def get_info_students():
+        with open('reports/Students.csv', 'w') as f:
+            writer = csv.writer(f)
+            info = Student.list_of_students
+            for v in info:
+                writer.writerow([v.get_info()["Name"], v.get_info()["Surname"], v.get_info()["Age"], v.get_info()["Gender"], v.get_info()["Nationality"], v.get_info()["School"], v.get_info()["Subjects"]])
     
     
 
