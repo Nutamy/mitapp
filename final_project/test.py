@@ -1,13 +1,19 @@
-from packages import math, hello
+def test(*keys):
+    for i in range(len(keys)):
+        print(keys[i])
 
-print("packages.math.fullname('nataly', 'KOZULINA'):")
-math.fullname('nataly', 'KOZULINA')
+test('History', 'Geography', 'Literature', 'Biology', 'Algebra', 'Drawing', 'Chemistry')
 
-print("packages.math.add(5, 5):")
-math.add(5, 5)
+class Aa:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+        bb = []
+        for i in range(len(b)):
+            bb.append(b[i])
 
-print("packages.math.sub(78, 9):")
-math.sub(78, 9)
 
-print("packages.hello.hello('Nataly'):")
-hello.hello('Nataly')
+
+obj_a = Aa(14,('Pit', 'Nina', 'Olya'))
+
+print(obj_a.b)
