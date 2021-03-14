@@ -1,5 +1,5 @@
 import csv
-import users
+from users import *
 
 class School:
     def __init__(self, name=None, address=None, phone=None, email=None, num_stud=None, num_teachers=None):

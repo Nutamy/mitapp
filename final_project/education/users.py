@@ -51,9 +51,7 @@ class Student(Teacher):
     def __init__(self, name, surname, age, gender, nationality, school, subject):
         super().__init__(name, surname, age, gender, nationality, school, subject)
 
-if __name__ == '__main__':
-    Human()
-    Teacher()
+
     
     
 
