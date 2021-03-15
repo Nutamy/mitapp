@@ -55,20 +55,12 @@ class School:
             for v in self.list_of_students:
                 writer.writerow([v.get_info()["Name"], v.get_info()["Surname"], v.get_info()["Age"], v.get_info()["Gender"], v.get_info()["Nationality"], v.get_info()["School"], ''.join(v.get_info()["Subjects"])])
 
-
-    def get_list_of_students(self):
-        for student in self.list_of_students:
-            return student.get_info()
-
     def get_report_of_students(self):
         with open(f'reports/{self.name}_students.csv', 'w') as f:
             writer = csv.writer(f)
             writer.writerow(["Name", "Surname", "Age", "Gender", "Nationality", "School", "Subjects"])
             for v in self.list_of_students:
                 writer.writerow([v.get_info()["Name"], v.get_info()["Surname"], v.get_info()["Age"], v.get_info()["Gender"], v.get_info()["Nationality"], v.get_info()["School"], ''.join(v.get_info()["Subjects"])])
-
-    def get_list_of_teachers(self):
-        return self.list_of_teachers
 
     def get_report_of_teachers(self):
         with open(f'reports/{self.name}_teachers.csv', 'w') as f:

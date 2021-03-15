@@ -8,6 +8,7 @@ class Human:
         self.age = age
         self.gender = gender
         self.nationality = nationality
+        
     
     def set_name(self, name):
         self.name = name
@@ -38,12 +39,13 @@ class Teacher(Human):
         super().__init__(name, surname, age, gender, nationality)
         Teacher.list_of_teachers.append(self)
 
+
     def set_school(self, school):
         self.school = school
 
     def add_subject(self, *subject):
         for i in range(len(subject)):
-            self.subject.append(subject[i])
+            self.subject.append(','+subject[i])
     
     def get_info(self):
         teacher_info = super().get_info()
@@ -57,7 +59,7 @@ class Teacher(Human):
             writer = csv.writer(f)
             info = Teacher.list_of_teachers
             for v in info:
-                writer.writerow([v.get_info()["Name"], v.get_info()["Surname"], v.get_info()["Age"], v.get_info()["Gender"], v.get_info()["Nationality"], v.get_info()["School"], ''.join(v.get_info()["Subjects"])])
+                writer.writerow([v.get_info()["Name"], v.get_info()["Surname"], v.get_info()["Age"], v.get_info()["Gender"], v.get_info()["Nationality"], v.get_info()["School"], ','.join(v.get_info()["Subjects"])])
 
 class Student(Teacher):
 
@@ -68,13 +70,14 @@ class Student(Teacher):
         Student.list_of_students.append(self)
         super().list_of_teachers.pop()
 
+
     @staticmethod
     def get_info_students():
         with open('reports/Students.csv', 'w') as f:
             writer = csv.writer(f)
             info = Student.list_of_students
             for v in info:
-                writer.writerow([v.get_info()["Name"], v.get_info()["Surname"], v.get_info()["Age"], v.get_info()["Gender"], v.get_info()["Nationality"], v.get_info()["School"],  ''.join(v.get_info()["Subjects"])])
+                writer.writerow([v.get_info()["Name"], v.get_info()["Surname"], v.get_info()["Age"], v.get_info()["Gender"], v.get_info()["Nationality"], v.get_info()["School"],  ','.join(v.get_info()["Subjects"])])
     
     
 
