@@ -1,3 +1,4 @@
+# Задания оригиналы
 - [ООП: Конструктор [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/07335d2888a308d0e1dc1f7e64232c23.ipynb)
 - [Модули: Подробности [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/1032f6d31f987f94931b91e20e4eac38.ipynb)
 - [ООП: Наследование [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/16b966a897b9748eb116a6a979bd96fd.ipynb)
@@ -7,3 +8,11 @@
 - [Основы: Tuples (кортежи) [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/4a2d4ea46ce684796c28d590054e86be.ipynb)
 - [ООП: Ассоциация [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/507126b85301b437d465c5ad374ef432.ipynb)
 - [Основы: Условный оператор [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/587bdcdbba31e8508872ab01e6c89d02.ipynb)
+- [Основы: Базовые операции [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/59755bb57520717b0b36d087f5ebd3c1.ipynb)
+- [ООП: Модификаторы доступа [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/61aa8f3a46b00155fb2e0aeb0084bf6f.ipynb)
+- [найдите все ошибки в строках кода](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/6b6286bff4799e339e1a81098565722f.ipynb)
+- [люди стоят в ряд в парке](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/6fa5b3b33f236457a2eeb9a64a8586a5.ipynb)
+- [Основы: Циклы for & while [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/71348286ff2c6e7863b118d110dd532d.ipynb)
+- [Функции: Введение [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/f2463851dc88c573cfc7aab233d9ef1d.ipynb)
+- [Функции: Рекурсия [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/f107e1e698b099e0e7d07fb2b3ad07de.ipynb)
+- [Функции: Вложенная функция [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task/e0850a2395adf930b599af9a985d4a83.ipynb)
