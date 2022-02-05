@@ -1,3 +1,4 @@
+# Содержание
 - [Основы: Условный оператор [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task6.ipynb)
 - [Основы: Операторы сравнения & логические операторы](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task5.ipynb)
 - [Основы: Lists (списки) [Домашнее задание]](https://github.com/Nutamy/mitapp/blob/main/Fundamentals%20of%20Python/task_lists.ipynb)
