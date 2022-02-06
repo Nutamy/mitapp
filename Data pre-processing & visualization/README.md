@@ -1,31 +1,25 @@
 # Выжимка
 
 ## Очистка данных
-*Удаление пунктуации*
+
 ```python
 import re
+import pandas as pd
+
+df = pd.read_csv('movie_scores.csv')
+
+# Удаление пунктуации
 def clean(line):
     new_line=re.sub(r'\W+', ' ', line).lower()
     return new_line
-```
-*Удаление пустых ячеек*
-```python
-import pandas as pd
-# 1 вариант
-df = pd.read_csv('movie_scores.csv')
-for column in df.columns.tolist():
-    df = df[df[column].notnull()]
-# 2 вариант
+
+# Удаление пустых ячеек
 df.dropna()
-# заполнение пустых ячеек средним значением
+
+# Заполнение пустых ячеек средним значением
 df.fillna(df.mean())
+
 # интерполяция
+series = df['Column']
 series.interpolate()
-```
-*Удаление пустых ячеек*
-```python
-import pandas as pd
-df = pd.read_csv('movie_scores.csv')
-for column in df.columns.tolist():
-    df = df[df[column].notnull()]
 ```
