@@ -31,4 +31,4 @@ df4.to_excel(writer, sheet_name ='Sheet1',
 # and output the Excel file.
 writer.save()
 ```
-[](https://media.geeksforgeeks.org/wp-content/uploads/Screenshot-5319.png)
+[ ](https://media.geeksforgeeks.org/wp-content/uploads/Screenshot-5319.png)
