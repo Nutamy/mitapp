@@ -5,3 +5,13 @@
 ![](https://www.dummies.com/wp-content/uploads/250467.image0.png)
 
 ![](https://miro.medium.com/max/1200/1*nPxOKWpyD80uqqDMluoYgA.png)
+
+```python
+txt = "My name is Ståle"
+
+# The encode() method encodes the string, using the specified encoding. If no encoding is specified, UTF-8 will be used.
+x = txt.encode()
+
+print(x)
+# b'My name is St\xc3\xe5le'
+```
