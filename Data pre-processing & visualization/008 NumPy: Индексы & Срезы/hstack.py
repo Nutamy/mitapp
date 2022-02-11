@@ -13,6 +13,11 @@ height_age_arr = np.hstack((heights_arr, ages_arr))
 print(height_age_arr.shape)
 print(height_age_arr)
 
+arr1=np.array([x for x in range(20,0,-1)]).reshape(1,20)
+arr2=np.array([x for x in range(1,21)]).reshape(1,20)
+arr=np.concatenate((arr1,arr2))
+print(arr)
+
 '''
 To combine more than two arrays horizontally, simply add the additional arrays into the tuple.
 '''
