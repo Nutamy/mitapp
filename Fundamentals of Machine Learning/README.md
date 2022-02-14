@@ -15,3 +15,4 @@ x = txt.encode()
 print(x)
 # b'My name is St\xc3\xe5le'
 ```
+![](https://github.com/Nutamy/imges/blob/main/Q-Q%20Plot.png)
